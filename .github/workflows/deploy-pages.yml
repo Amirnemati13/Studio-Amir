@@ -1,0 +1,42 @@
+name: Publish Studio Amir
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Restore and verify website archive
+        run: |
+          echo "13f17d69ae253d963058530b88dabe3cd241cc237547211d940490e59307325e  latest-source.zip" | sha256sum --check
+          node restore.mjs
+          unzip -q studio-amir-site.zip
+          unzip -qo latest-source.zip
+      - name: Build and validate
+        working-directory: studio-amir-site
+        run: |
+          node scripts/build.mjs
+          node scripts/check.mjs
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: studio-amir-site/docs
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v5
