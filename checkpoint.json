@@ -1,0 +1,14 @@
+{
+  "archive": "studio-amir-site.zip",
+  "sha256": "98510acfd71a2974b770bc7ef0f480291f08fc75b4f7698ccff5a73c98f92412",
+  "parts": [
+    "studio-amir-site.zip.part01",
+    "studio-amir-site.zip.part02",
+    "studio-amir-site.zip.part03",
+    "studio-amir-site.zip.part04",
+    "studio-amir-site.zip.part05",
+    "studio-amir-site.zip.part06",
+    "studio-amir-site.zip.part07"
+  ],
+  "purpose": "Recoverable complete website source, content and all currently integrated media. Raw source and high-resolution archives are separate."
+}
