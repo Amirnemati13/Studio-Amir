@@ -1,0 +1,57 @@
+[
+  {
+    "name": "checkpoint.json",
+    "bytes": 545,
+    "sha256": "7e76ee1eb4044cede69e9a5daf997edf3b200ec8c44ddb176556df842bc80eca"
+  },
+  {
+    "name": "HANDOFF.md",
+    "bytes": 6147,
+    "sha256": "08b8365a963e9ac58331927b41a04608465c1bac7aabe7b9c630fcae129b5a7b"
+  },
+  {
+    "name": "latest-source.zip",
+    "bytes": 130421,
+    "sha256": "d85456ae18a00af035ae133d65674f82e9be999ada74a6623cbebfd2dd6e3525"
+  },
+  {
+    "name": "restore.mjs",
+    "bytes": 404,
+    "sha256": "17be1dbddaf5bad82c54822074cfc51626df3f830acf4949ae54cccf075b1b30"
+  },
+  {
+    "name": "studio-amir-site.zip.part01",
+    "bytes": 20971520,
+    "sha256": "65dd4135e08d83f7465683f0d12292dfd57e5c570c401ed393c0589a73a33d60"
+  },
+  {
+    "name": "studio-amir-site.zip.part02",
+    "bytes": 20971520,
+    "sha256": "6d9d64fa660f28d2c012d6f00e1104a491899619954e07be5b3aded89febce23"
+  },
+  {
+    "name": "studio-amir-site.zip.part03",
+    "bytes": 20971520,
+    "sha256": "1b325883f4fc3f241329432903cef80e380f2363c90ad709a849717f3408e05e"
+  },
+  {
+    "name": "studio-amir-site.zip.part04",
+    "bytes": 20971520,
+    "sha256": "171c1a5b607114acaa2a6dc0f0828209afa0378507ae63b879579d82d7933b32"
+  },
+  {
+    "name": "studio-amir-site.zip.part05",
+    "bytes": 20971520,
+    "sha256": "2ff208e730de8a4f0ac687d6516c63e4477bb7de08ffddc71c1426162996f842"
+  },
+  {
+    "name": "studio-amir-site.zip.part06",
+    "bytes": 20971520,
+    "sha256": "82ed8a05c59c9df9cfb9c2bc29a04abade04f628fdf07f017158a51021bd5164"
+  },
+  {
+    "name": "studio-amir-site.zip.part07",
+    "bytes": 4791636,
+    "sha256": "038dd7c5cf4369e9e829e459e570f1ba3a6f3e0154314910022bb9653ec9c86f"
+  }
+]
