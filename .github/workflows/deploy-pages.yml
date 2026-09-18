@@ -19,6 +19,8 @@ jobs:
           node restore.mjs
           unzip -q studio-amir-site.zip
           unzip -qo latest-source.zip
+          echo "a9d45653d266caf26e5ea8da2d9f09b6bb6ccf3358d513d13d5a0c86b6ffe1eb  projects-update-2026-09-18.zip" | sha256sum --check
+          unzip -qo projects-update-2026-09-18.zip
           sed -i 's|https://t.me/libertarian_75|https://t.me/Architect_Book|g' studio-amir-site/content/profile.json
       - name: Build and validate
         working-directory: studio-amir-site
