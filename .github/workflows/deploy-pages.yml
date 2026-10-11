@@ -21,12 +21,15 @@ jobs:
           unzip -qo latest-source.zip
           echo "a9d45653d266caf26e5ea8da2d9f09b6bb6ccf3358d513d13d5a0c86b6ffe1eb  projects-update-2026-09-18.zip" | sha256sum --check
           unzip -qo projects-update-2026-09-18.zip
+          echo "780a1b3f19422e316ec5bb60dadf8c1290a4cf8acfe086b202b3a717f36f5f9a  studio-amir-video-overlay.zip" | sha256sum --check
+          unzip -qo studio-amir-video-overlay.zip -d studio-amir-site
           sed -i 's|https://t.me/libertarian_75|https://t.me/Architect_Book|g' studio-amir-site/content/profile.json
       - name: Build and validate
         working-directory: studio-amir-site
         run: |
           node scripts/build.mjs
           node scripts/check.mjs
+          node scripts/check-videos.mjs
       - uses: actions/upload-pages-artifact@v3
         with:
           path: studio-amir-site/docs
